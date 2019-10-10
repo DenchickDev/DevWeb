@@ -5,15 +5,21 @@
     <title>Example</title>
     <link rel="stylesheet" href="static/css/carousel.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /*.round {max-width: 100%; height: auto; border-radius: 100px;*/
+
+
+        /*}*/
+    </style>
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">ViRTul</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!--        <div class="collapse navbar-collapse" id="navbarCollapse">
+               <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -30,6 +36,9 @@
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </div>-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <a class="navbar-brand registr" href="registration.html">Регистрация</a>
+        </div>
     </nav>
 </header>
 
@@ -42,20 +51,58 @@
             <li data-target="#carousel" data-slide-to="1"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
+        <!--<div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1>Example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>-->
         <div class="carousel-inner" >
             <div class="carousel-item active">
-                <div class="item-responsive ">
-                    <img class="img-fluid" src="static/css/image/tmp2.jpg" alt="Responsive image">
+                <div >
+                    <div  style="background-image: url(static/css/image/tmp5.jpg); background-repeat:no-repeat; background-position: center; background-size: auto; height: 500px">
+                    </div>
+<!--                    <img class="img-fluid" src="static/css/image/tmp2.jpg" alt="Responsive image">-->
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="item-responsive ">
-                    <img class="img-fluid" src="static/css/image/tmp3.jpg" alt="Responsive image">
+                <div >
+                    <div  style="background-image: url(static/css/image/tmp3.jpg);background-repeat:no-repeat; background-position: center; background-size: auto; height: 500px">
+                    </div>
+<!--                    <img class="img-fluid" src="static/css/image/tmp3.jpg" alt="Responsive image">-->
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="item-responsive ">
-                    <img class="img-fluid" src="static/css/image/tmp4.jpg" alt="Responsive image">
+                <div >
+                    <div class = "cover_background" style="background-image: url(static/css/image/tmp4.jpg);background-repeat:no-repeat; background-position: center; background-size: auto; height: 500px">
+                    </div>
+<!--                    <img class="img-fluid" src="static/css/image/tmp4.jpg" alt="Responsive image">-->
                 </div>
             </div>
         </div>
@@ -70,7 +117,7 @@
         </a>
     </div>
 
-    </div>
+
     <!--<div id="myCarousel" class="carousel slide p-0" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -130,22 +177,24 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+<!--                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>-->
+
+                    <img class="round" src="static/css/image/Zombi3.png" alt="Responsive image">
+                <h2>Dead Knight</h2>
+                <p>Игра в жанре платформер, рассказывающая о любви пережившей смерть. Суть игры заключается в том, что главный персонаж проходя через множество преград и ловушек стремится к тому, что бы спасти свою любовь.</p>
+                <p><a class="btn btn-secondary" href="DeadKnight.html" role="button">Подробнее &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Heading</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <img class="round" src="static/css/image/youtube-logo2.png" alt="Responsive image">
+                <h2>YouTube</h2>
+                <p>Мы создали ряд интересных проектов, которые мы стремимся развивать вместе с вами.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <img class="round" src="static/css/image/instagram-logo2.png" alt="Responsive image">
+                <h2>Instagram</h2>
+                <p>Инстаграм для дополнения наших проектов ютуба, развития индивидуальных проектов и для более удобного общения с нашей аудиторией.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -156,11 +205,11 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Вступай в нашу команду. <span class="text-muted">Раскрой свой потенциал.</span></h2>
+                <p class="lead">Мы - это команда мечтателей, которая хочет чуточку изменить мир и раскрыть свой потенциал</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img class="onus" src="static/css/image/Crew.jpg" alt="Responsive image">
             </div>
         </div>
 
@@ -168,11 +217,11 @@
 
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Выбери чем ты хочешь заниматься. <span class="text-muted">От нас развитие и поддержка.</span></h2>
+                <p class="lead">Главное понять чего хочешь именно ты, найти свою цель и идти к ней. Занимайся именно тем, что тебе нравится, не бойся начинать, ведь никогда не бывает поздно. Каждый из нас ответит и обсудит с тобой любой вопрос.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img class="onus" src="static/css/image/Dream.jpg" alt="Responsive image">
             </div>
         </div>
 
@@ -180,11 +229,11 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading">Необходимы наши услуги ?<span class="text-muted">Качественно. Быстро.</span></h2>
+                <p class="lead">Мы занимаемся дизайном, media-продакшном, разрабатываем сайты и ведём разработку игр и программных продуктов.</p>
             </div>
             <div class="col-md-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                <img class="onus" src="static/css/image/Services.jpg" alt="Responsive image">
             </div>
         </div>
 
