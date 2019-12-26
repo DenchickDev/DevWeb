@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Registration</title>
+    <title>Buy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Floating labels example · Bootstrap</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/floating-labels/">
 
@@ -47,29 +46,46 @@
         </div>
     </nav>
 </header>
-<form class="form-signin">
+<form style="margin: auto;"> <!-- class="form-signin">-->
     <div class="text-center mb-4">
         <img  src="static/css/image/VRT.png" alt="" width="260">
-        <h1 class="h3 mb-3 font-weight-normal">Форма регистрации</h1>
+        <h1 class="h3 mb-3 font-weight-normal">Форма оплаты</h1>
 <!--        <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>-->
     </div>
+<div class="form-group">
+    <div class="row">
+        <div class="col">
+            <label for="Name">Имя</label>
+            <input type="text" id="Name" class="form-control" placeholder="Name" autofocus>
+        </div>
+        <div class="col">
+            <label for="inputEmail">Email</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
 
-    <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputEmail">Email address</label>
+        </div>
     </div>
-
-    <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <label for="inputPassword">Password</label>
+    <div class="row">
+        <div class="col" style="margin-top: 10px">
+            <label for="Category">Категория</label>
+            <select class="form-control" id="Category">
+                <option value="">Выбрать...</option>
+            </select>
+        </div>
+        <div class="col" style="margin-top: 10px">
+            <label for="Service">Услуга</label>
+            <select class="form-control" id="Service">
+                <option value="">Выбрать...</option>
+            </select>
+            <!--<input type="text" id="Service" class="form-control" placeholder="Service" required>-->
+        </div>
+        <div class="col" style="margin-top: 10px">
+            <label for="Price">Цена</label>
+            <input type="text" readonly id="Price" class="form-control" placeholder="Price" required autofocus>
+        </div>
     </div>
-
-    <div class="checkbox mb-3">
-        <label>
-            <input type="checkbox" value="remember-me"> Запомнить меня
-        </label>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Зарегистрироваться</button>
+</div>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Оплатить</button>
     <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2019</p>
 </form>
 </body>
